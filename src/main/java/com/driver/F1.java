@@ -4,7 +4,7 @@ public class F1 extends Car {
 
 
     public F1(String name, boolean isManual) {
-        super(name,4,0,6,isManual,"Racing",1);
+       super(name,0,0,0,isManual,"",0);
 
 
     }
@@ -44,6 +44,8 @@ public class F1 extends Car {
 
         if(newSpeed > 0) {
             changeSpeed(newSpeed, getCurrentDirection());
+        }else{
+            setCurrentSpeed(0);
         }
     }
 }
