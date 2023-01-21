@@ -9,7 +9,9 @@ public class Car extends Vehicle {
     private int currentGear;
     private int seats;
 
-
+    public int getCurrentGear() {
+        return currentGear;
+    }
 
     public void setCurrentGear(int currentGear) {
         this.currentGear = currentGear;
